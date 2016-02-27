@@ -11,6 +11,16 @@
 	.item_spec {
     margin: 0 60px;
 	}
+	.form_count h2{
+		font-size: 42px;
+	}
+	.form_count p{
+		padding: 0;
+		
+	}
+	.order .mini .button, .order .maxi .button{
+		padding: 30px 10px;
+	}
 
 
 }
@@ -31,6 +41,52 @@
 	}
 	.item_spec {
     margin: 0 10px;
+	}
+	.form_count h2{
+		font-size: 34px;
+		line-height: 44px;
+	}
+	#countdown {
+    margin-top: 192px;
+    text-align: left;
+	}
+	.countdownHolder{
+		font-size: 32px;
+	}
+	.form_count p{
+		margin-top: 10px;
+		font-size: 33px;
+	}
+	.form_count{
+		height: 652px;
+	}
+	.order .maxi {
+    transform: scale(1);
+	}
+	.owl-carousel .owl-item img.docs{
+		display: none;
+	}
+	.slide__img{
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin-right: 20px;
+	}
+	.slide__descr .blue_descr{
+		display: none;
+	}
+	.slide__descr {
+    font-size: 27px;
+    line-height: 28px;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-prev, .owl-carousel .owl-controls .owl-nav .owl-next{
+		top: 187px;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-prev{
+		left: -74px;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-next{
+		right: -74px;
 	}
 	
 }
@@ -99,6 +155,49 @@
 	}
 	.item_does{
 		margin-left: 0;
+	}
+	#countdown {
+    margin-top: 25px;
+    text-align: center;
+	}
+	.form_count p::before{
+		right: -34px;
+		top: 94px;
+		transform: rotate(-90deg);
+	}
+	.form_count{
+		height: 985px;
+	}
+	.order .title_wrap h2{
+		margin-bottom: 40px;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-prev, .owl-carousel .owl-controls .owl-nav .owl-next{
+		background-image: url(../img/arr_sprite_xs.png);
+		width: 31px;
+		height: 52px;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-next{
+		background-position: -31px 0;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-prev{
+		left: -47px;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-next{
+		right: -47px;
+	}
+	.slide__img{
+		display: inline-block;
+		float: none;
+	}
+	.slide__descr_title{
+		text-align: center;
+	}
+	.slide__descr {
+    font-size: 24px;
+    line-height: 25px;
+	}
+	.receive .button_wrap .button{
+		padding: 32px 140px;
 	}
 
 
@@ -172,6 +271,73 @@
 	}
 	.items_does {
     margin-top: 60px;
+	}
+	.countdownHolder{
+		font-size: 23px;
+		width: 290px;
+	}
+	.form_count p::before{
+		display: none;
+	}
+	.form_count p {
+    font-size: 27px;
+    line-height: 36px;
+    text-align: center;
+	}
+	.form_count h2{
+		display: none;
+	}
+	form input, form button, form textarea{
+		font-size: 20px;
+	}
+	.form_count {
+    height: 728px;
+	}
+	.order img{
+		min-height: auto;
+		width: 290px;
+	}
+	.order .mini tr:first-child td, .order .maxi tr:first-child td{
+		font-size: 34px;
+	}
+	.order .mini .button, .order .maxi .button{
+		font-size: 17px;
+	}
+	.slide__descr_title h3{
+		font-size: 35px;
+		line-height: 32px;
+	}
+	.slide__descr_title p {
+    font-size: 20px;
+	}
+	.slide__descr {
+    font-size: 18px;
+    line-height: 21px;
+	}
+	.slide__descr ol li {
+    margin: 7px 0;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-prev{
+		left: -38px;
+	}
+	.owl-carousel .owl-controls .owl-nav .owl-next{
+		right: -38px;
+	}
+	.receive{
+		font-size: 25px;
+		line-height: 28px;
+	}
+	.receive .button_wrap .button {
+    padding: 18px 60px;
+	}
+	.footer .form_consult button{
+		font-size: 16px;
+	}
+	.footer .form_consult h4{
+		line-height: 32px;
+	}
+	.wrap_descr_footer .descr h3{
+		font-size: 32px;
 	}
 
 

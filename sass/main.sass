@@ -343,3 +343,184 @@ form
 #countdown
 	margin-top: 255px
 
+.order
+	margin-top: 288px
+	margin-bottom: 170px
+	text-transform: uppercase
+	font-size: 22px
+	text-align: center
+	.title_wrap
+		h2
+			color: #525252
+			margin-bottom: 170px
+	img
+		display: inline-block
+		min-height: 332px
+		vertical-align: top
+	.mini, .maxi
+		width: 100%
+		margin-top: 100px
+		margin-bottom: 50px
+		.button
+			border-radius: 4px
+			font-size: 28px
+			padding: 30px 50px
+		td
+			height: 98px
+			background-color: silver
+		tr
+			&:nth-child(even)
+				td
+					background-color: #e8e8e8
+			&:first-child, &:last-child
+				td
+					background-color: $color
+					padding: 35px 0
+					color: #fff
+			&:first-child
+				td
+					font-size: 57px
+			&:last-child
+				td
+					padding: 50px 0
+	.maxi
+		transform: scale(1.1)
+
+.reviews
+	margin-bottom: 80px
+
+.slide
+	&__img
+		width: 270px
+		height: 270px
+		border-radius: 10em
+		overflow: hidden
+		img
+			width: 100%
+			border-radius: 10em
+	&__descr_title
+		text-align: left
+		h3
+			font-weight: 400
+			font-size: 44px
+			line-height: 45px
+			margin-bottom: 0
+			margin-top: 15px
+		p
+			font-size: 25px
+		.work
+			margin-top: 0
+	&__descr
+		text-align: left
+		font-size: 33px
+		line-height: 37px
+		.blue_descr
+			padding: 0 60px
+			font-style: italic
+			color: #226384
+			position: relative
+			&::before, &::after
+				content: ''
+				position: absolute
+				width: 64px
+				height: 46px
+				background-image: url(../img/quot.png)
+			&::before
+				left: -15px
+			&::after
+				right: 0
+				transform: rotate(-180deg)
+		ol 
+			list-style-type: none 
+			padding: 0
+			counter-reset:  item 
+			li
+				margin: 15px 0
+				&::before 
+					content: counter(item) ') '
+					counter-increment: item 
+   
+.owl-carousel
+	position: relative
+	.owl-controls
+		.owl-nav
+			.owl-prev, .owl-next
+				width: 62px
+				height: 103px
+				background-image: url(../img/arr_sprite.png)
+				display: inline-block
+				position: absolute
+				top: 300px
+			.owl-prev
+				left: -100px
+			.owl-next
+				right: -100px
+				background-position: -62px 0
+
+.receive
+	text-align: left
+	margin-bottom: 70px
+	font-size: 32px
+	line-height: 38px
+	.row
+		margin: 25px 0
+	.button_wrap
+		text-align: center
+		margin-top: 115px
+		.button
+			text-transform: uppercase
+			border-radius: 4px
+			padding: 32px 210px
+			font-size: 27px
+
+.contact_sect
+	padding-top: 15px
+
+.footer
+	background-image: url(../img/bg_footer.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 851px
+	.form_consult
+		width: 100%
+		padding: 30px 25px
+		margin-top: 70px
+		h4
+			font-size: 31px
+		p
+			font-size: 27px
+		button
+			font-size: 25px
+			padding: 25px 0
+
+.wrap_descr_footer
+	margin-top: 30px
+	.social
+		display: inline-block
+		vertical-align: top
+		margin-right: 40px
+		position: relative
+		margin-bottom: 30px
+		top: 30px
+	.descr
+		display: inline-block
+		color: #fff
+		font-size: 25px
+		line-height: 28px
+		h3
+			font-size: 44px
+
+#form_popup
+	width: 290px
+	position: relative
+	margin: 0 auto
+	background-color: #d1d1d1
+	text-align: center
+	padding: 25px 20px
+	h4
+		text-transform: uppercase
+		font-size: 25px
+	input
+		font-size: 14px
+	.button
+		font-size: 15px

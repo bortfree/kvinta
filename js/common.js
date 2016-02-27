@@ -1,5 +1,16 @@
 $(function() {
 
+	$(".button_scroll").mPageScroll2id();
+
+	$('.popup').magnificPopup();
+
+	$(".slider").owlCarousel({
+		items:1,
+		loop: true,
+		nav: true,
+		navText: ""
+	});
+
 	var note = $('#note'),
 	ts = new Date(2012, 0, 1),
 	newYear = true;

@@ -20,6 +20,9 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+
+	<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -43,7 +46,7 @@
 					<div class="contact_wrap">
 						<p>+7(800)920-76-75</p>
 						<span>звонок бесплатный</span>
-						<a href="#" class="top_button">заказать обратный звонок</a>
+						<a href="#form_popup" class="top_button popup">заказать обратный звонок</a>
 					</div>
 
 				</div>
@@ -72,6 +75,11 @@
 							<button class="button">Получить консультацию</button>
 							<img src="img/arrow_form.png" alt="Arrow" class="arrow_form">
 							<p>перезвоним в течение 20 минут</p>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Квинта">
+							<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+							<input type="hidden" name="form_subject" value="Заказ консультации">
+							<!-- END Hidden Required Fields -->
 						</form>
 					</div>
 
@@ -213,7 +221,11 @@
 					</div>
 				</div>
 			</div>
-
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Квинта">
+			<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+			<input type="hidden" name="form_subject" value="Заказ услуги">
+			<!-- END Hidden Required Fields -->
 		</form>
 	</div>
 
@@ -267,7 +279,15 @@
 	<section class="form_count">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1">
+				
+				<div class=" col-lg-6 col-md-6 col-sm-6 col-lg-push-6 col-md-push-6 col-sm-push-6">
+					
+					<div id="countdown"></div>
+					<p>не откладывайте на потом <br>Задайте свой <span>вопрос</span> <br>прямо сейчас это <span>бесплатно</span></p>
+
+				</div>
+
+				<div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-lg-pull-6 col-md-pull-6 col-sm-pull-6">
 					
 					<h2>ЗАДАЙТЕ ВОПРОС ПРЯМО СЕЙЧАС</h2>
 					<form id="form_count">
@@ -275,22 +295,334 @@
 						<input type="text" name="phone" required placeholder="Ваш телефон">
 						<textarea name="question" required placeholder="Введите вопрос"></textarea>
 						<button class="button">Отправить вопрос</button>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Квинта">
+						<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+						<input type="hidden" name="form_subject" value="Вопрос">
+						<!-- END Hidden Required Fields -->
 					</form>
 
 				</div>
-				<div class="col-md-6">
-					
-					<div id="countdown"></div>
-					<p>не откладывайте на потом <br>Задайте свой <span>вопрос</span> <br>прямо сейчас это <span>бесплатно</span></p>
 
-				</div>
 			</div>
 		</div>
 
 		<div class="bg_down"></div>
 	</section>
+
+	<section class="order">
+		<div class="title_wrap">
+			<h2>Заказать пакет услуг</h2>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					
+					<img src="img/ic_order_mini.png" alt="Mini">
+
+					<table class="mini">
+						<tr>
+							<td>Тариф "мини"</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td><a href="#cons_scr" class="button button_scroll">получить консультацию</a></td>
+						</tr>
+					</table>
+
+				</div>
+				<div class="col-md-6">
+					
+					<img src="img/ic_order_maxi.png" alt="Mini">
+
+					<table class="maxi">
+						<tr>
+							<td>Тариф "макси"</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td>Далеко-далеко за словесными горами.</td>
+						</tr>
+						<tr>
+							<td><a href="#cons_scr" class="button button_scroll">получить консультацию</a></td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="reviews">
+		<div class="title_wrap">
+			<h2>Отзывы</h2>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+					
+					<div class="slider">
+						
+						<div class="slide">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="slide__img">
+										<img src="img/foto1_rev.jpg" alt="Отзывы">
+									</div>
+									<div class="slide__descr_title">
+										<h3>Калачикова Екатерина</h3>
+										<p class="work">детский психолог</p>
+										<p>взыскано: 35 000 руб.</p>
+										<img class="docs" src="img/doc1_rev.jpg" alt="Взыскано">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="slide__descr">
+										<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+										<ol>
+											<li>В то время некий безымянный печатник создал</li>
+											<li>используя Lorem Ipsum для распечатки</li>
+											<li>Lorem Ipsum не только успешно пережил без</li>
+											<li>заметных изменений пять веков, но и</li>
+											<li>перешагнул в электронный дизайн.</li>
+										</ol>
+										<p class="blue_descr">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="slide__img">
+										<img src="img/foto1_rev.jpg" alt="Отзывы">
+									</div>
+									<div class="slide__descr_title">
+										<h3>Калачикова Екатерина</h3>
+										<p class="work">детский психолог</p>
+										<p>взыскано: 35 000 руб.</p>
+										<img class="docs" src="img/doc1_rev.jpg" alt="Взыскано">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="slide__descr">
+										<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+										<ol>
+											<li>В то время некий безымянный печатник создал</li>
+											<li>используя Lorem Ipsum для распечатки</li>
+											<li>Lorem Ipsum не только успешно пережил без</li>
+											<li>заметных изменений пять веков, но и</li>
+											<li>перешагнул в электронный дизайн.</li>
+										</ol>
+										<p class="blue_descr">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="slide__img">
+										<img src="img/foto1_rev.jpg" alt="Отзывы">
+									</div>
+									<div class="slide__descr_title">
+										<h3>Калачикова Екатерина</h3>
+										<p class="work">детский психолог</p>
+										<p>взыскано: 35 000 руб.</p>
+										<img class="docs" src="img/doc1_rev.jpg" alt="Взыскано">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="slide__descr">
+										<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+										<ol>
+											<li>В то время некий безымянный печатник создал</li>
+											<li>используя Lorem Ipsum для распечатки</li>
+											<li>Lorem Ipsum не только успешно пережил без</li>
+											<li>заметных изменений пять веков, но и</li>
+											<li>перешагнул в электронный дизайн.</li>
+										</ol>
+										<p class="blue_descr">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="slide__img">
+										<img src="img/foto1_rev.jpg" alt="Отзывы">
+									</div>
+									<div class="slide__descr_title">
+										<h3>Калачикова Екатерина</h3>
+										<p class="work">детский психолог</p>
+										<p>взыскано: 35 000 руб.</p>
+										<img class="docs" src="img/doc1_rev.jpg" alt="Взыскано">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="slide__descr">
+										<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+										<ol>
+											<li>В то время некий безымянный печатник создал</li>
+											<li>используя Lorem Ipsum для распечатки</li>
+											<li>Lorem Ipsum не только успешно пережил без</li>
+											<li>заметных изменений пять веков, но и</li>
+											<li>перешагнул в электронный дизайн.</li>
+										</ol>
+										<p class="blue_descr">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="receive">
+		<div class="title_wrap">
+			<h2>А так же вы получите</h2>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-sm-8">претензия</div>
+				<div class="col-md-3 col-sm-4">от 500 руб.</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-sm-8">составление иска</div>
+				<div class="col-md-3 col-sm-4">от 3000 руб.</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-sm-8">представление интересов в 1 заседании</div>
+				<div class="col-md-3 col-sm-4">от 3000 руб.</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-sm-8">правовая экспертиза договоров</div>
+				<div class="col-md-3 col-sm-4">от 1500 руб.</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-sm-8">составление процессуальных документов (частная жалоба, ходатайство и т.д.)</div>
+				<div class="col-md-3 col-sm-4">от 1000 руб.</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-sm-8">составление апелляционной жалобы, кассационной жалобы</div>
+				<div class="col-md-3 col-sm-4">от 4000 руб.</div>
+			</div>
+
+			<div class="button_wrap">
+				<a href="#cons_scr" class="button button_scroll">Получить</a>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="contact_sect">
+		<div class="title_wrap">
+			<h2>Контакты</h2>
+		</div>
+
+		<div class="maps">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=1Kg-yh-ipsEb231y7YjRDdUQWshUF-C-&width=100%&height=555&lang=ru_RU&sourceType=constructor"></script>
+		</div>
+
+	</section>
+
+	<footer id="cons_scr" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-6">
+					
+					<div class="wrap_descr_footer">
+						<div class="social">
+							<a href="#"><img src="img/vk.png" alt="Vkontakte"></a>
+						</div>
+						<div class="descr">
+							<h3>+7 (800) 920-76-75</h3>
+							<p>Спб, переулок Лодыгина<br>дом 1/28, кабинет 77</p>
+							<p>info@kwinta-spb.ru</p>
+							<p>ООО «КВИНТА» &copy; 2015</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<div class="form_consult">
+						<form id="consult_footer">
+							<h4><span>Бесплатная </span> консультация в офисе</h4>
+							<input type="text" name="name" required placeholder="Ваше имя">
+							<input type="text" name="phone" required placeholder="Ваш телефон">
+							<button class="button">Получить консультацию</button>
+							<img src="img/arrow_form.png" alt="Arrow" class="arrow_form">
+							<p>перезвоним в течение 20 минут</p>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Квинта">
+							<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+							<input type="hidden" name="form_subject" value="Заказ консультации">
+							<!-- END Hidden Required Fields -->
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	
-	<div class="hidden"></div>
+	<div class="hidden">
+		
+		<div class="form_consult">
+			<form id="form_popup">
+				<h4>Заказать звонок</h4>
+				<input type="text" name="name" required placeholder="Ваше имя">
+				<input type="text" name="phone" required placeholder="Ваш телефон">
+				<button class="button">Заказать</button>
+				<img src="img/arrow_form.png" alt="Arrow" class="arrow_form">
+				<p>перезвоним в течение 20 минут</p>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Квинта">
+				<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+				<input type="hidden" name="form_subject" value="Заказ обратного звонка">
+				<!-- END Hidden Required Fields -->
+			</form>
+		</div>
+
+	</div>
 
 	<div class="loader">
 		<div class="loader_inner"></div>
@@ -307,7 +639,10 @@
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/countdown/jquery.countdown.js"></script>
+	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="libs/equalHeight/jquery.equalheights.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	
 	<script src="js/common.js"></script>
